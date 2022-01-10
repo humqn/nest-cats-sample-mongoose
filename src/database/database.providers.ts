@@ -4,10 +4,6 @@ export const databaseProviders = [
   {
     provide: 'DATABASE_CONNECTION',
     useFactory: async (): Promise<typeof mongoose> =>
-      await mongoose.connect(
-        'mongodb+srv://nest:m4914Qo6RWP7>@nestexample.en69k.mongodb.net/nestexample',
-      ),
+      await mongoose.connect('mongodb://localhost/test'),
   },
-
-  /* m4914Qo6RWP7 */
 ];
